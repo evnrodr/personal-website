@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../styles/global";
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
+import { Profile } from "../components/Profile";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState(light);
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Profile />
       <Component {...pageProps} />
     </ThemeProvider>
   );

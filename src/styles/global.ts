@@ -28,6 +28,7 @@ export default createGlobalStyle`
     font: 500 1rem Inter, sans-serif;
   }
   
+  p,
   h1,
   h2,
   h3,
