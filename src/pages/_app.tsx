@@ -8,6 +8,7 @@ import GlobalStyle from "../styles/global";
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
 import { Profile } from "../components/Profile";
+import { Navigation } from "../components/Navigation";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState(light);
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Profile />
+      <Navigation />
       <Component {...pageProps} />
     </ThemeProvider>
   );

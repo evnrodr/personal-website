@@ -21,6 +21,33 @@ export const Content = styled.div`
   flex-direction: inherit;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+
+  h1 {
+    font-weight: 300;
+  }
+`;
+
+export const Links = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  gap: 2.5rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+
+    &:hover {
+      color: #0077e4;
+    }
+  }
 `;
 
 export const Picture = styled(Image)`
